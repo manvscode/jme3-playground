@@ -17,8 +17,8 @@ dependencies {
 
     compile("org.jmonkeyengine:jme3-core:${jmeVersion}")
     runtime("org.jmonkeyengine:jme3-desktop:${jmeVersion}")
-    runtime("org.jmonkeyengine:jme3-lwjgl:${jmeVersion}")
-    //runtime("org.jmonkeyengine:jme3-lwjgl3:${jmeVersion}")
+    runtime("org.jmonkeyengine:jme3-lwjgl:${jmeVersion}") // seems not to work.
+    //runtime("org.jmonkeyengine:jme3-lwjgl3:${jmeVersion}") // seems to work.
 }
 
 configure<JavaPluginConvention> {
