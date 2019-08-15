@@ -21,7 +21,7 @@ public class Application extends SimpleApplication {
     public static void main(String[] args){
         AppSettings settings = new AppSettings(true);
         settings.setResolution(512, 512);
-        settings.setBitsPerPixel(24);
+        settings.setBitsPerPixel(32);
         settings.setDepthBits(8);
         settings.setAlphaBits(8);
         settings.setAudioRenderer(null);
@@ -56,7 +56,6 @@ public class Application extends SimpleApplication {
         mat.setColor("Color", ColorRGBA.Red);   // set color of material to blue
         geom.setMaterial(mat);                   // set the cube's material
         rootNode.attachChild(geom);              // make the cube appear in the scene
-
     }
 
     @Override
